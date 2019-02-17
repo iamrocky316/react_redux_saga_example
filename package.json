@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^6.0.0",
@@ -30,5 +31,13 @@
   "devDependencies": {},
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrocky316/react_redux_saga_example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamrocky316/react_redux_saga_example/issues"
+  },
+  "homepage": "https://github.com/iamrocky316/react_redux_saga_example#readme"
 }

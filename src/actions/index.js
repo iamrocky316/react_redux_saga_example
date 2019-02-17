@@ -1,9 +1,9 @@
-import * as actionTypes from './actionTypes';
+import * as actionTypes from "./actionTypes";
 
 // Action
-export const getUserDetails = (payload) => {
-    return {
-        type: actionTypes.LOAD_USER_REQUEST,
-        payload
-    }
-}
+export const getUserDetails = payload => {
+  return {
+    type: actionTypes.LOAD_USER_REQUEST,
+    payload
+  };
+};
