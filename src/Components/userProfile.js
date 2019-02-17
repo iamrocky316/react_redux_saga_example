@@ -9,7 +9,7 @@ class UserProfile extends React.Component {
     }
 
     componentDidMount() {
-        this.props.getUserDetails('mentrie');
+        // this.props.getUserDetails('mentrie');
     }
 
     handleUserDetail(event) {

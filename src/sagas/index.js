@@ -14,5 +14,6 @@ function* loadUserDetails({ payload }) {
 
 // Watches for LOAD_USER_REQUEST action and call loadUserDetails with supplied arguments
 export function* watchRequest() {
+    console.log("[saga] inside watchRequest");
     yield takeLatest(actionTypes.LOAD_USER_REQUEST, loadUserDetails);
 }

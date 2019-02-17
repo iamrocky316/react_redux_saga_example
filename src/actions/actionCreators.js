@@ -1,11 +1,16 @@
+import axios from 'axios';
+
 // GitHub API
 export const gitHubApi = (username) => {
-    return fetch(`https://api.github.com/users/${username}`)
-        .then(response => {
-            return response.json()
-                .then(({ login, avatar_url, html_url }) => ({ login, avatar_url, html_url }));
+    return axios.get(`https://api.github.com/users/${username}`)
+        .then(function (response) {
+            return ({
+                login: response.data.login,
+                avatar_url: response.data.avatar_url,
+                html_url: response.data.html_url
+            });
         })
-        .catch(error => {
-            throw error;
-        })
+        .catch(function (error) {
+            console.log(error);
+        });
 };
